@@ -30,9 +30,11 @@ export function ProjectShowcase({ projects }: ProjectShowcaseProps) {
 
   // Filter projects based on selected tags
   const filteredProjects =
-    selectedTags.length === 0
-      ? projects
-      : projects.filter((project) => selectedTags.some((tag) => project.tags.includes(tag)))
+  selectedTags.length === 0
+    ? projects
+    : projects.filter(project =>
+        selectedTags.every(tag => project.tags.includes(tag))
+      );
 
   // Toggle tag selection
   const toggleTag = (tag: string) => {

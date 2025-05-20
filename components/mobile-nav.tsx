@@ -32,11 +32,11 @@ export function MobileNav() {
       </Button>
 
       {/* Overlay */}
-      {isOpen && <div className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm" onClick={toggleMenu} />}
+      {isOpen && <div className="h-screen fixed inset-0 z-50 bg-background/80 backdrop-blur-sm" onClick={toggleMenu} />}
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 z-50 h-full w-3/4 max-w-sm bg-background p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 z-50 h-screen w-3/4 max-w-sm bg-background p-6 shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
