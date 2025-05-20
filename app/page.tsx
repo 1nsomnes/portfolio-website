@@ -50,6 +50,7 @@ export default function Home() {
           </nav>
         </div>
       </header>
+
       <main className="flex-1">
         <section className="container flex items-center justify-center min-h-screen py-12 px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-8">
@@ -104,7 +105,7 @@ export default function Home() {
         </section>
 
         <section id="projects" className="container py-24 sm:py-32 bg-muted/50 px-4 md:px-6">
-          <ProjectShowcase projects={projects} />
+          <ProjectShowcase projects={portfolioData.projects.projects} />
         </section>
 
         <Skills data={portfolioData.skills} id="skills" />

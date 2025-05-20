@@ -14,51 +14,54 @@ export const portfolioData = {
     title: "My Projects",
     projects: [
       {
-        id: 1,
-        title: "E-Commerce Platform",
-        description: "A full-stack e-commerce application with payment processing and inventory management.",
-        tags: ["React", "Node.js", "MongoDB", "Stripe"],
-        imageUrl: "/placeholder.svg?height=200&width=350",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        title: "E-commerce Platform",
+        description:
+          "A modern e-commerce platform built with Next.js and Stripe for secure payments. Features include product catalog, cart functionality, and user authentication.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["Next.js", "Stripe", "Tailwind CSS"],
       },
       {
-        id: 2,
         title: "Task Management App",
-        description: "A productivity application for managing tasks, projects, and team collaboration.",
-        tags: ["TypeScript", "Next.js", "Prisma", "PostgreSQL"],
-        imageUrl: "/placeholder.svg?height=200&width=350",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        description:
+          "A collaborative task management application with real-time updates. Users can create, assign, and track tasks across teams with notifications.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["React", "Firebase", "TypeScript"],
       },
       {
-        id: 3,
-        title: "Weather Dashboard",
-        description: "Real-time weather information with interactive maps and forecasts.",
-        tags: ["JavaScript", "React", "API Integration", "Chart.js"],
-        imageUrl: "/placeholder.svg?height=200&width=350",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        title: "Finance Dashboard",
+        description:
+          "An interactive dashboard for tracking personal finances with visualization charts, expense categorization, and budget planning tools.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["Next.js", "Chart.js", "Supabase"],
       },
       {
-        id: 4,
-        title: "Social Media Analytics",
-        description: "Analytics dashboard for tracking social media performance and engagement.",
-        tags: ["React", "D3.js", "Firebase", "Material UI"],
-        imageUrl: "/placeholder.svg?height=200&width=350",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        title: "Recipe Finder App",
+        description:
+          "A mobile-responsive application that helps users find recipes based on ingredients they have at home, with filtering by dietary restrictions.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["React", "API Integration", "CSS Grid"],
       },
       {
-        id: 5,
-        title: "Fitness Tracker",
-        description: "Mobile-first application for tracking workouts and nutrition.",
-        tags: ["React Native", "GraphQL", "MongoDB", "AWS"],
-        imageUrl: "/placeholder.svg?height=200&width=350",
-        githubUrl: "https://github.com",
-        liveUrl: "https://example.com",
+        title: "Portfolio Template",
+        description:
+          "A customizable portfolio template for developers and designers with dark mode support and animation effects.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
       },
-    ],
+      {
+        title: "Weather Forecast App",
+        description:
+          "A weather application that provides real-time forecasts and historical weather data with interactive maps and location-based services.",
+        image: "/placeholder.svg?height=400&width=600",
+        link: "#",
+        tags: ["React", "OpenWeather API", "Leaflet"],
+      },
+    ]
   },
   skills: {
     title: "Skills & Expertise",
@@ -157,5 +160,6 @@ export const portfolioData = {
       },
     ],
   },
+  
 }
 
