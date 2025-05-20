@@ -9,6 +9,10 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { ProjectShowcase } from "@/components/project-showcase"
 import { MobileNav } from "@/components/mobile-nav"
 
+import { Skills } from "@/components/skills"
+import { Contact } from "@/components/contact"
+import { portfolioData } from "@/lib/data"
+
 export const metadata: Metadata = {
   title: "John Doe | Portfolio",
   description: "Frontend Developer & UI/UX Designer",
@@ -103,136 +107,9 @@ export default function Home() {
           <ProjectShowcase projects={projects} />
         </section>
 
-        <section id="skills" className="container py-24 sm:py-32 px-4 md:px-6">
-          <div className="space-y-6">
-            <div className="space-y-2 text-center">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Skills</h2>
-              <p className="mx-auto max-w-[700px] text-lg text-muted-foreground">Technologies and tools I work with</p>
-            </div>
-            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
-              {skills.map((skill) => (
-                <Card key={skill} className="flex items-center justify-center p-6 h-24">
-                  <span className="font-medium">{skill}</span>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Skills data={portfolioData.skills} id="skills" />
+        <Contact data={portfolioData.contact} id="contact" />
 
-        <section id="contact" className="container py-24 sm:py-32 bg-muted/50 px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
-            <div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
-              <p className="mt-4 text-lg text-muted-foreground">
-                I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a project
-                in mind or just want to connect!
-              </p>
-              <div className="mt-6 space-y-4">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-5 w-5" />
-                  <a href="mailto:hello@johndoe.com" className="text-lg hover:text-primary">
-                    hello@johndoe.com
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Linkedin className="h-5 w-5" />
-                  <a
-                    href="https://linkedin.com/in/johndoe"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg hover:text-primary"
-                  >
-                    linkedin.com/in/johndoe
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Github className="h-5 w-5" />
-                  <a
-                    href="https://github.com/johndoe"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg hover:text-primary"
-                  >
-                    github.com/johndoe
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Twitter className="h-5 w-5" />
-                  <a
-                    href="https://twitter.com/johndoe"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg hover:text-primary"
-                  >
-                    twitter.com/johndoe
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <form className="space-y-4">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="John Doe"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="hello@example.com"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label
-                    htmlFor="subject"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    id="subject"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Project Inquiry"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label
-                    htmlFor="message"
-                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Tell me about your project..."
-                  />
-                </div>
-                <Button type="submit" className="w-full">
-                  Send Message
-                </Button>
-              </form>
-            </div>
-          </div>
-        </section>
       </main>
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row px-4 md:px-6">
