@@ -14,56 +14,48 @@ export const portfolioData = {
     title: "My Projects",
     projects: [
       {
-        title: "E-commerce Platform",
+        title: "Sierpinskis Triangle",
         description:
-          "A modern e-commerce platform built with Next.js and Stripe for secure payments. Features include product catalog, cart functionality, and user authentication.",
-        image: "/placeholder.svg?height=400&width=600",
-        link: "#",
-        tags: ["Next.js", "Stripe", "Tailwind CSS"],
+          "Emergence of order out of chaos",
+        image: "/projects/striangle.png",
+        link: "https://github.com/1nsomnes/SierpinskisTriangle",
+        tags: ["Math", "Simulation", "Unity", "C\#"],
       },
       {
-        title: "Task Management App",
+        title: "Flow Fields",
         description:
-          "A collaborative task management application with real-time updates. Users can create, assign, and track tasks across teams with notifications.",
-        image: "/placeholder.svg?height=400&width=600",
-        link: "#",
-        tags: ["React", "Firebase", "TypeScript"],
+          "Beautiful flowing imagery using simple principles of differential equations.",
+        image: "/projects/flow.png",
+        link: "https://github.com/1nsomnes/FlowFields",
+        tags: ["Math", "Simulation", "Unity", "C\#"],
       },
       {
-        title: "Finance Dashboard",
+        title: "Three Body Simulation",
         description:
-          "An interactive dashboard for tracking personal finances with visualization charts, expense categorization, and budget planning tools.",
-        image: "/placeholder.svg?height=400&width=600",
-        link: "#",
-        tags: ["Next.js", "Chart.js", "Supabase"],
+          "One of the most famous chaotic systems simulated and traced in several stable configurations.",
+        image: "/projects/threebody.png",
+        link: "https://github.com/InsomnesTutorials/ThreeBodyProblemSimulation",
+        tags: ["Math", "Simulation", "Unity", "C\#"],
       },
       {
-        title: "Recipe Finder App",
+        title: "YouTube Transcriber",
         description:
-          "A mobile-responsive application that helps users find recipes based on ingredients they have at home, with filtering by dietary restrictions.",
+          "Based off YouTube link generate transcriptions using OpenAI's state of the art \"whisper\" model.",
         image: "/placeholder.svg?height=400&width=600",
-        link: "#",
-        tags: ["React", "API Integration", "CSS Grid"],
+        link: "https://github.com/1nsomnes/TranscriptionApp",
+        tags: ["FullStack", "Python", "HTML/CSS", "Flask", "Vue", "JavaScript"],
       },
       {
-        title: "Portfolio Template",
+        title: "AirFoil Generator",
         description:
-          "A customizable portfolio template for developers and designers with dark mode support and animation effects.",
-        image: "/placeholder.svg?height=400&width=600",
+          "Generating and printing airfoils programatically based of NACA specs",
+        image: "/projects/airfoil.png",
         link: "#",
-        tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
-      },
-      {
-        title: "Weather Forecast App",
-        description:
-          "A weather application that provides real-time forecasts and historical weather data with interactive maps and location-based services.",
-        image: "/placeholder.svg?height=400&width=600",
-        link: "#",
-        tags: ["React", "OpenWeather API", "Leaflet"],
+        tags: ["Engineering", "CAD", "Python"],
       },
     ]
   },
-  skills: {
+   skills: {
     title: "Skills & Expertise",
     skillCategories: [
       {

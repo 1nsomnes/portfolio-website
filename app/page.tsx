@@ -14,8 +14,8 @@ import { Contact } from "@/components/contact"
 import { portfolioData } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: "John Doe | Portfolio",
-  description: "Frontend Developer & UI/UX Designer",
+  title: "Cedric Claessens | Portfolio",
+  description: "Software Engineer and Mathematician",
 }
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold inline-block">JOHN DOE</span>
+              <span className="font-bold inline-block">CEDRIC</span>
             </Link>
           </div>
 
@@ -56,10 +56,10 @@ export default function Home() {
           <div className="flex flex-col items-center text-center space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-                Hi, I'm John Doe
+                Hi, I'm Cedric Claessens
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px]">
-                Frontend Developer & UI/UX Designer
+                Software Engineering and Mathematics 
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -80,22 +80,24 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                I'm a passionate frontend developer and UI/UX designer with 5 years of experience creating beautiful,
-                functional, and user-centered digital experiences.
+                I'm a student studying Computer Science and Mathematics. I first started programming 
+                in middle school when I created games in Unity and C#. 
+                Since then, I have made lots of games and participated in many game jams.
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
-                Currently, I'm focused on building accessible, human-centered products at Acme Inc. My expertise
-                includes React, Next.js, TypeScript, and modern UI frameworks.
+                Currently, I'm more focused on the intersection of mathematics and coding. 
+                In particular I am interested in simulation using math to model naturally ocurring phenomena. 
+                Additionally, I enjoy concepts from machine learning and information theory.
               </p>
               <p className="mt-4 text-lg text-muted-foreground">
-                When I'm not coding, you'll find me hiking, reading sci-fi novels, or experimenting with new cooking
-                recipes.
+                Outside of coding and school, I like to maintain a well-balanced lifestyle including reading, sports such as pickleball, 
+                tennis, bouldering, skiing, etc... and volunteering.
               </p>
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="John Doe"
+                src="/headshot.jpg"
+                alt="Cedric Claessens"
                 width={400}
                 height={400}
                 className="rounded-full object-cover"
