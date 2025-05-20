@@ -71,39 +71,47 @@ export const portfolioData = {
         skills: [
           "HTML/CSS",
           "JavaScript",
-          "TypeScript",
           "React",
-          "Next.js",
-          "Tailwind CSS",
-          "Redux",
-          "Responsive Design",
+          "Vue",
+          "Flutter"
         ],
       },
       {
         category: "Backend",
-        skills: ["Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL", "Authentication", "Serverless"],
+        skills: [
+          "Node.js",
+          "Python",
+          "Flask",
+          "RESTful APIs",
+          "Authentication",
+        ],
       },
       {
         category: "Database",
-        skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Prisma", "Supabase", "Redis"],
+        skills: [
+          "MongoDB",
+          "PostgreSQL",
+          "Firebase",
+        ],
       },
       {
         category: "DevOps & Tools",
-        skills: ["Git", "GitHub Actions", "Docker", "AWS", "Vercel", "CI/CD", "Testing", "Performance Optimization"],
-      },
-      {
-        category: "Design",
-        skills: ["Figma", "UI/UX", "Wireframing", "Prototyping", "Accessibility", "Design Systems"],
+        skills: [
+          "Git",
+          "GitHub",
+          "Docker",
+          "AWS",
+          "Testing",
+        ],
       },
       {
         category: "Soft Skills",
         skills: [
           "Problem Solving",
-          "Communication",
+          "Entrepreneurship",
           "Teamwork",
-          "Time Management",
-          "Adaptability",
-          "Attention to Detail",
+          "Flexible",
+          "Hard Working",
         ],
       },
     ],
@@ -111,22 +119,17 @@ export const portfolioData = {
   contact: {
     title: "Contact Me",
     description: "Interested in working together? Feel free to reach out!",
-    email: "your.email@example.com",
+    email: "claecedric at gmail dot com",
     socialLinks: [
       {
         platform: "LinkedIn",
-        url: "https://linkedin.com",
+        url: "https://www.linkedin.com/in/cedric-claessens-412414250/",
         icon: "linkedin",
       },
       {
         platform: "GitHub",
-        url: "https://github.com",
+        url: "https://github.com/1nsomnes",
         icon: "github",
-      },
-      {
-        platform: "Twitter",
-        url: "https://twitter.com",
-        icon: "twitter",
       },
     ],
   },

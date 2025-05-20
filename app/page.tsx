@@ -115,20 +115,16 @@ export default function Home() {
       <footer className="border-t py-6 md:py-8">
         <div className="container flex flex-col items-center justify-between gap-4 md:flex-row px-4 md:px-6">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 John Doe. All rights reserved.
+            © 2025 Cedric Claessens. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/1nsomnes" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
-            <Link href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/cedric-claessens-412414250/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </Link>
-            <Link href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer">
-              <Twitter className="h-5 w-5" />
-              <span className="sr-only">Twitter</span>
             </Link>
           </div>
         </div>
@@ -136,69 +132,3 @@ export default function Home() {
     </div>
   )
 }
-
-const projects = [
-  {
-    title: "E-commerce Platform",
-    description:
-      "A modern e-commerce platform built with Next.js and Stripe for secure payments. Features include product catalog, cart functionality, and user authentication.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["Next.js", "Stripe", "Tailwind CSS"],
-  },
-  {
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates. Users can create, assign, and track tasks across teams with notifications.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["React", "Firebase", "TypeScript"],
-  },
-  {
-    title: "Finance Dashboard",
-    description:
-      "An interactive dashboard for tracking personal finances with visualization charts, expense categorization, and budget planning tools.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["Next.js", "Chart.js", "Supabase"],
-  },
-  {
-    title: "Recipe Finder App",
-    description:
-      "A mobile-responsive application that helps users find recipes based on ingredients they have at home, with filtering by dietary restrictions.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["React", "API Integration", "CSS Grid"],
-  },
-  {
-    title: "Portfolio Template",
-    description:
-      "A customizable portfolio template for developers and designers with dark mode support and animation effects.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
-  },
-  {
-    title: "Weather Forecast App",
-    description:
-      "A weather application that provides real-time forecasts and historical weather data with interactive maps and location-based services.",
-    image: "/placeholder.svg?height=400&width=600",
-    link: "#",
-    tags: ["React", "OpenWeather API", "Leaflet"],
-  },
-]
-
-const skills = [
-  "HTML/CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Node.js",
-  "Git",
-  "Figma",
-  "UI/UX Design",
-  "Responsive Design",
-  "Accessibility",
-]
