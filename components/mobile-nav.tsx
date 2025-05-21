@@ -6,7 +6,16 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 
-export function MobileNav() {
+interface LinkInfo {
+  name: string,
+  href: string
+}
+
+interface LinkProps {
+  links: LinkInfo[]
+}
+
+export function MobileNav({ links }: LinkProps ) {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -48,34 +57,16 @@ export function MobileNav() {
         </div>
 
         <nav className="mt-8 flex flex-col gap-6">
-          <Link
-            href="#about"
-            className="text-lg font-medium transition-colors hover:text-primary"
-            onClick={handleLinkClick}
-          >
-            About
-          </Link>
-          <Link
-            href="#projects"
-            className="text-lg font-medium transition-colors hover:text-primary"
-            onClick={handleLinkClick}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#skills"
-            className="text-lg font-medium transition-colors hover:text-primary"
-            onClick={handleLinkClick}
-          >
-            Skills
-          </Link>
-          <Link
-            href="#contact"
-            className="text-lg font-medium transition-colors hover:text-primary"
-            onClick={handleLinkClick}
-          >
-            Contact
-          </Link>
+            {links.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-medium transition-colors hover:text-primary"
+              >
+                {link.name}
+              </Link>
+            ))}
+ 
           <div className="flex items-center">
             <span className="mr-2 text-sm">Theme:</span>
             <ThemeToggle />

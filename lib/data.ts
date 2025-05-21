@@ -10,6 +10,12 @@ export const portfolioData = {
       "I'm a passionate developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I enjoy creating seamless user experiences and solving complex problems. My journey in tech started 5 years ago, and I've been continuously learning and growing ever since. When I'm not coding, you can find me hiking, reading, or experimenting with new technologies.",
     imageUrl: "/placeholder.svg?height=400&width=400",
   },
+  navlinks: [
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
+    { name: "Contact", href: "#contact" },
+  ],
   projects: {
     title: "My Projects",
     projects: [
