@@ -11,6 +11,7 @@ import { MobileNav } from "@/components/mobile-nav"
 
 import { Skills } from "@/components/skills"
 import { Contact } from "@/components/contact"
+import { Navbar } from "@/components/navbar"
 import { portfolioData } from "@/lib/data"
 
 export const metadata: Metadata = {
@@ -20,36 +21,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <div className="flex gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold inline-block">CEDRIC</span>
-            </Link>
-          </div>
+    <div className="overflow-x-hidden flex min-h-screen flex-col">
 
-          {/* Mobile Navigation */}
-          <MobileNav />
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
-            <Link href="#about" className="text-sm font-medium transition-colors hover:text-primary">
-              About
-            </Link>
-            <Link href="#projects" className="text-sm font-medium transition-colors hover:text-primary">
-              Projects
-            </Link>
-            <Link href="#skills" className="text-sm font-medium transition-colors hover:text-primary">
-              Skills
-            </Link>
-            <Link href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
-              Contact
-            </Link>
-            <ThemeToggle />
-          </nav>
-        </div>
-      </header>
+      <Navbar links={portfolioData.navlinks}/>
 
       <main className="flex-1">
         <section className="container flex items-center justify-center min-h-screen py-12 px-4 md:px-6">
@@ -80,7 +54,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                I'm a student studying Computer Science and Mathematics. I first started programming 
+                I'm studying Computer Science and Mathematics. I first started programming 
                 in middle school when I created games in Unity and C#. 
                 Since then, I have made lots of games and participated in many game jams.
               </p>

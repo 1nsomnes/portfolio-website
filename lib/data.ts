@@ -1,19 +1,8 @@
 export const portfolioData = {
-  hero: {
-    title: "Hi, I'm [Your Name]",
-    subtitle: "Full Stack Developer",
-    description: "I build responsive, accessible, and performant web applications with modern technologies.",
-  },
-  about: {
-    title: "About Me",
-    description:
-      "I'm a passionate developer with expertise in building modern web applications. With a strong foundation in both frontend and backend technologies, I enjoy creating seamless user experiences and solving complex problems. My journey in tech started 5 years ago, and I've been continuously learning and growing ever since. When I'm not coding, you can find me hiking, reading, or experimenting with new technologies.",
-    imageUrl: "/placeholder.svg?height=400&width=400",
-  },
   navlinks: [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
-    { name: "Skills", href: "#skills" },
+    { name: "Blog", href: "https://blog.cedricclaessens.com" },
     { name: "Contact", href: "#contact" },
   ],
   projects: {

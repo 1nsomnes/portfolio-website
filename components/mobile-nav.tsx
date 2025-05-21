@@ -61,7 +61,8 @@ export function MobileNav({ links }: LinkProps ) {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium transition-colors hover:text-primary"
+                onClick={ handleLinkClick }
+                className="text-lg font-medium transition-colors hover:text-primary"
               >
                 {link.name}
               </Link>
