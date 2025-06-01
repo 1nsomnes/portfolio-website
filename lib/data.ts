@@ -36,7 +36,7 @@ export const portfolioData = {
         title: "YouTube Transcriber",
         description:
           "Based off YouTube link generate transcriptions using OpenAI's state of the art \"whisper\" model.",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/projects/transcriber.png",
         link: "https://github.com/1nsomnes/TranscriptionApp",
         tags: ["FullStack", "Python", "HTML/CSS", "Flask", "Vue", "JavaScript"],
       },
