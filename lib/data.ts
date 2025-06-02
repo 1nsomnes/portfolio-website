@@ -45,7 +45,7 @@ export const portfolioData = {
         description:
           "Generating and printing airfoils programatically based of NACA specs",
         image: "/projects/airfoil.png",
-        link: "#",
+        link: "https://blog.cedricclaessens.com/the-art-of-designing-airfoils-with-the-naca-generator-and-autocad/",
         tags: ["Engineering", "CAD", "Python"],
       },
     ]
